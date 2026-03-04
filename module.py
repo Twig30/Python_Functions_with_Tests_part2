@@ -25,8 +25,16 @@ Your solutions must pass the automated test runner.
 #   - Must return a Boolean value (True or False).
 #   - Do NOT print anything.
 #
-def is_even(num: int) -> bool:
-    pass
+def is_even(s: int) -> bool:
+    for num in s:
+        if num % 2 == 0:
+            return True
+    return False
+
+            
+        
+
+ 
 
 
 # -------------------------------------------------
@@ -49,8 +57,14 @@ def is_even(num: int) -> bool:
 #   - Must return an integer.
 #   - Do NOT print anything.
 #
+
 def count_vowels(s: str) -> int:
-    pass
+    vowels = [ "a", "e", "i", "o", "u"]
+    count = 0
+    for char in s:
+        if char.lower() in vowels:
+            count += 1
+    return count
 
 
 # -------------------------------------------------
