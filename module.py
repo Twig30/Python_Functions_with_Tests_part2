@@ -59,8 +59,8 @@ def is_even(s: int) -> bool:
 #
 
 def count_vowels(s: str) -> int:
-    vowels = [ "a", "e", "i", "o", "u"]
     count = 0
+    vowels = ["a", "e", "i", "o", "u"]
     for char in s:
         if char.lower() in vowels:
             count += 1
@@ -84,7 +84,18 @@ def count_vowels(s: str) -> int:
 #   - Do NOT use built-in reverse() method.
 #
 def reverse_string(s: str) -> str:
-    pass
+    output = ""
+    index = len(s) - 1
+    while index >= 0:
+        output += s[index] #the [] allows the index of the last letter in the str to by placed into output
+        index -= 1
+    return output
+
+
+    
+       
+
+
 
 
 # -------------------------------------------------
